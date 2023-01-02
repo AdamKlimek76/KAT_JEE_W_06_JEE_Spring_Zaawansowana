@@ -52,10 +52,10 @@ private String title;
 ````
 oraz metodę:
 ````
-public void share() {
-    System.out.println("UPDATE OBSERVERS");
-    notifyObservers();
-}
+	public void share() {
+	    System.out.println("UPDATE OBSERVERS");
+	    notifyObservers();
+	}
 
 ````
 2. Utwórz implementacje interfejsu `Observer` w postaci klas:

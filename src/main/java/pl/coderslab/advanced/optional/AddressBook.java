@@ -15,11 +15,18 @@ public class AddressBook {
 
 
     public Optional<String> findAddressByName(String name) {
-        return null;
+        return Optional.ofNullable(name)
+                .map(str->phoneBookEntries.get(name));
     }
 
     public Optional<String> findNameByAddress(String address) {
         return null;
 
+    }
+
+    public static void main(String[] args) {
+        new AddressBook()
+                .findAddressByName("Jan Kowalski")
+                .ifPresent(System.out::println);
     }
 }

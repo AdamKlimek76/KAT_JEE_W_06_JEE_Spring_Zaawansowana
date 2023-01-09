@@ -31,7 +31,7 @@
 
 Dla zadanego interfejsu `Observer`:
 ```
-public interface Observer {
+public interface Observer { 
     void update(String title);
 }
 ```

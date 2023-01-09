@@ -1,7 +1,9 @@
 package pl.coderslab.advanced.abstractclass;
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 public class Main {
 
@@ -9,6 +11,7 @@ public class Main {
 
         Car sportCar = new Car(200, "porsche", "m3");
         System.out.println(sportCar);
+        System.out.println(sportCar.getMaxSpeed());
 
         Train train = new Train(120, "Wolny", 100);
         System.out.println(train);
@@ -37,7 +40,16 @@ public class Main {
             System.out.println(shape);
         }
 
+        shapeList.stream().forEach(System.out::println);
 
+        CarNew carNew1=new CarNew("auto 1");
+        CarNew carNew2=new CarNew("auto 2");
+
+        List<String>carNewList=new ArrayList<>();
+        carNewList.add(carNew1.name());
+        carNewList.add(carNew2.name());
+
+        carNewList.forEach(System.out::println);
 
     }
 

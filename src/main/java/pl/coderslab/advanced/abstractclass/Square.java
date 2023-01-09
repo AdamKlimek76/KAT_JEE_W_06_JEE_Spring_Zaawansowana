@@ -26,4 +26,6 @@ public class Square extends Shape {
         return "Prostokąt o bokach " + this.a + " " + this.b + " ma pole równe = " + this.area +
                 " i obwód równy = " + this.circuit;
     }
+
+
 }
